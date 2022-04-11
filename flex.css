@@ -1,26 +1,62 @@
 
 body {
-   width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+header {
     display: flex;
     flex-direction: column;
-}
-header {
-    display: inline-flex;
-    width: auto;
+    height: 20rem;
+    margin-bottom: 1rem;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fdustoffthebible.com%2Fwp-content%2Fuploads%2F2019%2F05%2FCodex1-Add-MS-43725-British-Library.jpg&f=1&nofb=1) ;
+   
 }
 
 
 
-header nav ul li {
-    width: 100%;
-    display: inline-flex;
-    justify-content: space-between;
-    padding: 5px;
-    margin: 15px;
-    box-shadow: 0 1px 2px 3px darkblue;
+.navList {
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px gray;
+    list-style: none; 
+    margin-right: 2rem;
+    margin: 0;
+    padding: .5rem;
+    
+    
 }
+
+
+.navItem {
+   list-style: none; 
+   margin-right: 2rem;
+   box-shadow: 0px 1px 2px 0.5 grey;
+   font-weight: bolder;
+}
+
+.navItem a {
+    text-decoration: none;
+    color: #000;
+}
+
+.mainButton {
+    font-size: 1rem;
+    background-color: rgb(248, 125, 125);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.mainButton:hover {
+    background-color: rgb(190, 72, 72);
+}
+
 
 main {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -43,7 +79,7 @@ a:hover {
     color: darkred;
 }
 
-.canonical {
+/*.canonical {
     background-color: lavender;
 }
 
@@ -53,11 +89,12 @@ a:hover {
 
 .non-christian {
     background-color: blanchedalmond;
-}
+}*/
 
 
 
 footer {
+    display: flex;
     flex-direction: column;
     background-color: rgb(189, 168, 140);
 }
