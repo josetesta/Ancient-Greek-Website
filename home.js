@@ -27,5 +27,3 @@ animation.addEventListener("mouseleave", () => {
 
 
 
-
-

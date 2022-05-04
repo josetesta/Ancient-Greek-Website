@@ -125,7 +125,6 @@ aside {
 
 footer {
     background-color: rgb(189, 168, 140);
-
     margin-top: 0;
     padding: 10px;
 }
@@ -135,7 +134,7 @@ footer {
     background-color: rgb(28, 6, 167);
     margin: 0px;
     border-radius: 0px;
-    
+
 }
 
 
@@ -178,6 +177,10 @@ form textarea {
 
 }
 
+form span {
+    color: red;
+}
+
 form button {
     padding: 15px;
     background-color: tomato;
@@ -198,8 +201,8 @@ form button {
 
 .videosPage {
     margin-top: 2rem;
-    
-    
+
+
 }
 
 

@@ -9,14 +9,14 @@
 
     <link rel="stylesheet" type="text/css" href="flex.css">
 
+    <!-- <script src="https://fontawesome.com/icons/circle-check?s=solid"></script> -->
+
 </head>
 
 <body>
     <header>
         <div class="contactPageHeader">
             <h1>Ancient Greek Resources (Koine and Classic)</h1>
-
-
 
             <nav class="mainNav">
 
@@ -28,23 +28,34 @@
                     <button class="mainButton"><a href="donate.html">Donate</a></button>
                 </ul>
             </nav>
-            
+
         </div>
     </header>
 
     <main class="contactPageMain">
         <div class="contactPageContainer">
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <form>
+                <!-- <i class="fa-solid fa-circle-check"></i> -->
+
                 <h3>CONTACT US</h3>
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Email" required>
-                <input type="text" id="phone" placeholder="Phone Number" required>
-                <textarea id="message" cols="1" rows="4" placeholder="How can we help?"></textarea>
+
+                <input type="text" placeholder="Full Name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
+                <input type="email" placeholder="Email" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+                <input type="text" placeholder="Phone Number" id="contact-phone" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+                <textarea cols="1" rows="4" placeholder="How can we help?" id="contact-message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
                 <button type="submit">Submit</button>
+                <span id="submit-error"></span>
+
             </form>
         </div>
     </main>
-    
+
+    <script src="contact.js"></script>
+
 </body>
 
 </html>
